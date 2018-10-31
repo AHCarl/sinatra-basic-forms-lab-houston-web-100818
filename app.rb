@@ -5,5 +5,9 @@ class App < Sinatra::Base
   get '/' do 
     erb :index
   end
+  
+  post '/' do 
+    @pup = Puppy.new(params)
+  end
 
 end
