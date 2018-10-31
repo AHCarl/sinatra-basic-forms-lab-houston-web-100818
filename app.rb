@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end
   
   post '/' do 
-    @pup = Puppy.new(params)
+    @pup = Puppy.new(params[])
   end
 
 end
